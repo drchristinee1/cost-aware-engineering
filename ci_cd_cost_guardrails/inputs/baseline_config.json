@@ -1,0 +1,8 @@
+{
+  "service_name": "checkout-api",
+  "environment": "prod",
+  "cpu_request_cores": 2,
+  "memory_request_gb": 8,
+  "replicas": 2,
+  "estimated_monthly_cost": 400
+}

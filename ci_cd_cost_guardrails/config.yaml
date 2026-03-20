@@ -1,0 +1,2 @@
+environment: prod
+default_output_path: outputs/guardrail_result.json
