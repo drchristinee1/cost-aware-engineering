@@ -1,0 +1,17 @@
+{
+    "service_name": "checkout-api",
+    "baseline_cost": 400,
+    "proposed_cost": 950,
+    "monthly_cost_increase": 550,
+    "percent_cost_increase": 137.5,
+    "cpu_increase_percent": 200.0,
+    "memory_increase_percent": 50.0,
+    "replica_increase": 2,
+    "status": "FAIL",
+    "triggered_policies": [
+        "monthly_cost",
+        "percent_cost",
+        "cpu"
+    ],
+    "recommendation": "Reduce resource requests or require approval before deployment"
+}
