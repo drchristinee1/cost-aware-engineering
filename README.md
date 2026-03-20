@@ -52,6 +52,12 @@ Detection Layer
   "action": "Review database sizing and utilization"
 }
 
+
+
+
+### Jira ticket output
+
+```json
 {
   "ticket_id": "DB-AUTO-XXXXXX",
   "assigned_team": "database-team",
@@ -61,5 +67,4 @@ Detection Layer
   "description": "Review database sizing and utilization",
   "priority": "HIGH"
 }
-
 
