@@ -29,6 +29,37 @@ Instead of stopping at cost visibility, the system translates cost signals into:
 - Surface unassigned cost
 - Support financial accountability and chargeback models
 
+## 🏗️ Architecture Cost Advisor
+
+This module simulates how architecture choices affect monthly cloud cost and cost per transaction before deployment.
+
+It is designed to support shift-left FinOps by helping teams evaluate design tradeoffs earlier, instead of waiting for billing surprises.
+
+### What it evaluates
+- estimated monthly cost
+- transaction volume
+- cost per transaction
+- architecture guidance
+
+### Example output
+
+```json
+[
+  {
+    "scenario": "baseline",
+    "estimated_monthly_cost": 600,
+    "transactions": 10000,
+    "cost_per_transaction": 0.06,
+    "advice": "Architecture cost profile looks reasonable. Continue monitoring growth and efficiency."
+  },
+  {
+    "scenario": "database_heavy_design",
+    "estimated_monthly_cost": 870,
+    "transactions": 7000,
+    "cost_per_transaction": 0.1243,
+    "advice": "High cost per transaction. Review architecture efficiency, caching, and scaling strategy."
+  }
+]
 ## 🔗 Unified FinOps System
 
 This repository implements a full FinOps control loop:
