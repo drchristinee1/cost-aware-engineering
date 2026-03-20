@@ -1,33 +1,65 @@
 # cost-aware-engineering
 
-A prototype FinOps engineering platform for shifting cloud cost management left — from reactive billing analysis to proactive design-time decision support.
+Prototype FinOps platform for cost-aware engineering, unit economics, and automated cloud cost accountability.
 
-## Purpose
+## Overview
 
-This repository demonstrates how FinOps can operate as an engineering enablement system rather than a reporting-only function.
+This repository demonstrates a modular FinOps execution pipeline that moves cloud cost management left — from reactive billing review to proactive engineering action.
 
-It focuses on four core capabilities:
+Instead of stopping at cost visibility, the system translates cost signals into:
 
-- Detect cloud cost signals
-- Attribute costs to teams, services, and product lines
-- Model unit economics and margin impact
-- Turn insights into actionable engineering and finance outputs
+- driver-aware recommendations
+- owner and team routing
+- priority assignment
+- Jira-style execution artifacts
 
-## Repository Structure
+## Why this matters
+
+Many FinOps workflows stop at reporting. This prototype is designed to show how FinOps can operate as an engineering enablement system:
+
+- Detect cost anomalies
+- Interpret the underlying cost driver
+- Generate context-aware actions
+- Route actions to the correct team
+- Simulate execution through ticket creation
+
+## Current working pipeline
+
+The current prototype implements this flow:
 
 ```text
-cost-aware-engineering/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── config/
-├── data/
-├── ingestion/
-├── attribution/
-├── detection/
-├── unit_economics/
-├── action_layer/
-├── shift_left/
-├── dashboards/
-├── cli/
-└── output/
+Detection Layer
+-> Driver Intelligence Layer
+-> Action Generation Layer
+-> Routing Layer
+-> Jira Simulation Layer
+
+
+---
+
+## Example output
+
+### Action output
+
+```json
+{
+  "driver": "RDS",
+  "resource": "db-1",
+  "owner": "team-b",
+  "team": "database-team",
+  "priority": "high",
+  "ticket": "DB-AUTO",
+  "action": "Review database sizing and utilization"
+}
+
+{
+  "ticket_id": "DB-AUTO-XXXXXX",
+  "assigned_team": "database-team",
+  "owner": "team-b",
+  "status": "OPEN",
+  "summary": "RDS cost anomaly - db-1",
+  "description": "Review database sizing and utilization",
+  "priority": "HIGH"
+}
+
+
