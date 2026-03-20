@@ -1,0 +1,12 @@
+[
+    {
+        "driver": "RDS",
+        "resource": "db-1",
+        "owner": "team-b",
+        "team": "database-team",
+        "priority": "high",
+        "ticket": "DB-AUTO",
+        "action": "Review database sizing and utilization",
+        "timestamp": "2026-03-20 09:52:33.890069"
+    }
+]

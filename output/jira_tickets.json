@@ -1,0 +1,12 @@
+[
+    {
+        "ticket_id": "DB-AUTO-4F40AF",
+        "assigned_team": "database-team",
+        "owner": "team-b",
+        "status": "OPEN",
+        "summary": "RDS cost anomaly - db-1",
+        "description": "Review database sizing and utilization",
+        "priority": "HIGH",
+        "created_at": "2026-03-20 09:52:33.890251"
+    }
+]
