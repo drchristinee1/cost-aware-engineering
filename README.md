@@ -29,6 +29,18 @@ Instead of stopping at cost visibility, the system translates cost signals into:
 - Surface unassigned cost
 - Support financial accountability and chargeback models
 
+## 🔗 Unified FinOps System
+
+This repository implements a full FinOps control loop:
+
+```text
+Cost Signals
+   ↓
+Tagging Governance (Who owns the cost?)
+   ↓
+Showback (Where is cost allocated?)
+   ↓
+Unit Economics (What is cost per business outcome?)
 ---
 
 ## 🧠 Example: Tagging + Showback Output
