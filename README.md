@@ -12,6 +12,36 @@ Instead of stopping at cost visibility, the system translates cost signals into:
 - owner and team routing
 - priority assignment
 - Jira-style execution artifacts
+## 🚀 Capabilities
+
+### 1. Cost Signal → Action Engine
+- Detect anomalies and cost drivers
+- Generate structured remediation actions
+- Route to owners (Jira-style output)
+
+### 2. Tagging Governance Engine
+- Detect missing required tags (owner, environment, product, cost_center)
+- Prioritize tagging gaps
+- Enable cost accountability
+
+### 3. Showback Engine
+- Aggregate cloud spend by owner
+- Surface unassigned cost
+- Support financial accountability and chargeback models
+
+---
+
+## 🧠 Example: Tagging + Showback Output
+
+### Tagging Issues
+```json
+[
+  {
+    "resource": "db-1",
+    "missing_tag": "owner",
+    "priority": "high"
+  }
+]
 
 ## Why this matters
 
