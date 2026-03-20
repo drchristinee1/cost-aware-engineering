@@ -1,0 +1,5 @@
+cluster_name,namespace,workload,workload_type,pod,owner,team,product,environment,cpu_request_cores,memory_request_gb,cpu_usage_cores,memory_usage_gb,runtime_hours
+prod-eks,payments,checkout-api,Deployment,checkout-api-1,payments-team,payments,commerce,prod,2,8,0.9,3.2,720
+prod-eks,payments,payment-worker,Deployment,payment-worker-1,payments-team,payments,commerce,prod,1,4,0.4,1.6,720
+prod-eks,search,search-api,Deployment,search-api-1,search-team,search,discovery,prod,4,16,2.8,10.5,720
+prod-eks,platform,ingress-nginx,DaemonSet,ingress-nginx-1,platform-team,platform,shared-services,prod,1,2,0.8,1.4,720

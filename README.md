@@ -29,8 +29,7 @@ Instead of stopping at cost visibility, the system translates cost signals into:
 - Surface unassigned cost
 - Support financial accountability and chargeback models
 
-## 🏗️ Architecture Cost Advisor
-
+### 4. Architecture Cost Advisor
 This module simulates how architecture choices affect monthly cloud cost and cost per transaction before deployment.
 
 It is designed to support shift-left FinOps by helping teams evaluate design tradeoffs earlier, instead of waiting for billing surprises.
@@ -59,7 +58,14 @@ It is designed to support shift-left FinOps by helping teams evaluate design tra
     "cost_per_transaction": 0.1243,
     "advice": "High cost per transaction. Review architecture efficiency, caching, and scaling strategy."
   }
-]
+
+### 5. Kubernetes Cost Allocation Engine
+- Allocate shared Kubernetes cluster cost to workloads, namespaces, teams, and products
+- Use request-based allocation for reserved platform demand
+- Compare request-based cost vs usage-based cost
+- Surface inefficiency and over-allocation
+- Directly attribute persistent volume cost
+- Create a foundation for container showback, chargeback, and unit economics]
 ## 🔗 Unified FinOps System
 
 This repository implements a full FinOps control loop:

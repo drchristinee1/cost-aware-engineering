@@ -1,0 +1,21 @@
+allocation_basis:
+  compute: requests
+  shared: requests
+  comparison: usage
+
+weights:
+  cpu: 0.5
+  memory: 0.5
+
+shared_cost_types:
+  - control_plane
+  - network
+
+direct_cost_types:
+  - compute
+
+defaults:
+  unknown_owner: UNASSIGNED_OWNER
+  unknown_team: UNASSIGNED_TEAM
+  unknown_product: UNASSIGNED_PRODUCT
+  unknown_environment: UNASSIGNED_ENV

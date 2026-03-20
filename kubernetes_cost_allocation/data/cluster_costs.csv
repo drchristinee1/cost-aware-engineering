@@ -1,0 +1,4 @@
+cluster_name,date,cost_type,cost_subtype,amount
+prod-eks,2026-03-01,compute,worker_nodes,3200
+prod-eks,2026-03-01,control_plane,eks_control_plane,300
+prod-eks,2026-03-01,network,load_balancer,450

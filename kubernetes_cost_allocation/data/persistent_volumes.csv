@@ -1,0 +1,3 @@
+cluster_name,namespace,workload,volume_name,storage_gb,monthly_storage_cost
+prod-eks,payments,checkout-api,pv-checkout-01,100,25
+prod-eks,search,search-api,pv-search-01,300,90
