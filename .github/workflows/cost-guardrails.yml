@@ -29,6 +29,15 @@ jobs:
       - name: Run cost guardrail evaluation
         run: python main.py
 
+      - name: Fail if cost guardrail fails
+        run: |
+          if grep -q '"status": "FAIL"' outputs/guardrail_result.json; then
+            echo "Cost guardrail failed"
+            exit 1
+           
+           else
+            echo "Cost guardrail passed"
+          fi
       - name: Upload guardrail result
         if: always()
         uses: actions/upload-artifact@v4

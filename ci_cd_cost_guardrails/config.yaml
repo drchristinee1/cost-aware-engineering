@@ -1,3 +1,1 @@
-environment: prod
-default_output_path: ci_cd_cost_guardrails/outputs/guardrail_result.json≈
-
+default_output_path: ci_cd_cost_guardrails/outputs/guardrail_result.json
